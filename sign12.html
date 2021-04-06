@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+          <script type="type/javascript">
+        
+          function validation(){
+             var user= document.getElementById('username').value;
+              var password= document.getElementById('password').value;
+               var confirmpassword= document.getElementById('passwordconfirm').value;
+                var mobileno= document.getElementById('numbermobile').value;
+                 var email= document.getElementById('emailid').value;
+                 
+                 if(user == ""){
+                  document.getElementById('usernameid).innerHTML = " Please fill the username";
+                  return false;
+                 }
+                 
+             
+          }
+          
+            
+            
+        
+        </script>
+    </head>
+    <body>
+        <div class ="container"><br>
+            <h1 class="text-center text-success">Registeration Form</h1><br>
+        <div class="col-lg-8 m-auto d-block">
+            
+            <form class="bg-light" action ="#" onsubmit="return validation()" >
+                
+                <div class ="form-group">
+                    <label>Username:</label>
+                    <input  type="text" name="user" id="username" class="form-control" autocomplete="off">
+                    <span id="username" class="text-danger font-weight-bold"></span>
+                     </div>
+                
+                  <div class ="form-group">
+                    <label>Password:</label>
+                      <input  type="text" name="user" id="password" class="form-control" autocomplete="off">
+                <span id="passwords"></span></div>
+                
+                <div class ="form-group">
+                    <label>Confirm password:</label>
+                      <input  type="text" name="user" id="passwordconfirm" class="form-control" autocomplete="off">
+                    <span id="confirmpassword"></span>
+                </div>
+                
+                 <div class ="form-group">
+                    <label>Mobile number:</label>
+                      <input  type="text" name="user" id="numbermobile" class="form-control" autocomplete="off">
+                    <span id="mobilenumber"></span>
+                </div>
+                
+                  <div class ="form-group">
+                    <label>E-mail:</label>
+                      <input  type="text" name="user" id="emailid" class="form-control" autocomplete="off">
+                    <span id="emailids"></span>
+                </div>
+                
+                <input type="submit" name="submit" value="Submit" class='btn btn-success'>
+            </form>
+            
+            </div>
+        </div>
+      
+        
+    </body>
+</html>
